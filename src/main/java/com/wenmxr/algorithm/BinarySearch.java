@@ -1,25 +1,28 @@
 package com.wenmxr.algorithm;
 
 /**
+ * 704.二分查找
+ * https://leetcode-cn.com/problems/binary-search/
+ *
  * @Author qinwen
  * @Date 2021/10/1 9:28 下午
  */
 public class BinarySearch {
     public static void main(String[] args) {
-        System.out.println(search(new int[]{-1,0,3,5,9,12}, 2));
+        System.out.println(search(new int[]{-1,0,3,5,9,12}, 13));
     }
 
     public static int search(int[] nums, int target) {
-        int low = 0;
-        int high = nums.length;
-        while (low < high) {
-            int mid = (high - low) / 2 + low;
-            if (nums[mid] < target) {
-                low = mid + 1;
-            } else if (nums[mid] > target) {
-                high = mid - 1;
+        int left = 0;
+        int right = nums.length - 1;
+        while (left <= right) {
+            int middle = (left + right) / 2;
+            if (nums[middle] > target) {
+                right = middle - 1;
+            } else if (nums[middle] < target) {
+                left = middle + 1;
             } else {
-                return mid;
+                return middle;
             }
         }
         return -1;
