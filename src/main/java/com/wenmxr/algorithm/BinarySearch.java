@@ -9,9 +9,16 @@ package com.wenmxr.algorithm;
  */
 public class BinarySearch {
     public static void main(String[] args) {
-        System.out.println(search(new int[]{-1,0,3,5,9,12}, 13));
+        System.out.println(search(new int[]{-1, 0, 3, 5, 9, 12}, 13));
     }
 
+    /**
+     * 二分算法 一般有两个条件 有序 + 唯一
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
