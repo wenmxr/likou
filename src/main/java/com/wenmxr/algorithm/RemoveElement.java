@@ -12,11 +12,11 @@ public class RemoveElement {
     public static void main(String[] args) {
         System.out.println(removeElement(new int[]{3, 2, 2, 3}, 3));
         System.out.println(removeElement2(new int[]{0,1,2,2,3,0,4,2}, 2));
+        System.out.println(removeElement3(new int[]{0,1,2,2,3,0,4,2}, 2));
     }
 
     /**
-     * 快慢双指针
-     *
+     * 数组赋值 隐式快慢双指针
      *
      * @param nums
      * @param val
@@ -30,6 +30,29 @@ public class RemoveElement {
             }
         }
         return ans;
+    }
+
+    /**
+     * 快慢双指针
+     *
+     * @param nums
+     * @param val
+     * @return
+     */
+    public static int removeElement3(int[] nums, int val) {
+        int slow = 0;
+        int quick = 0;
+        while (quick < nums.length) {
+            // 快指针遇到不相等，赋值慢指针
+            if (nums[quick] != val) {
+                nums[slow] = nums[quick];
+                slow++;
+                quick++;
+            } else {
+                quick++;
+            }
+        }
+        return slow;
     }
 
     /**
@@ -47,9 +70,12 @@ public class RemoveElement {
             if (nums[i] == val) {
                 int a = i;
                 for (int j = i + 1; j < size; j++) {
+                    // 向前位移一位
                     nums[a++] = nums[j];
                 }
+                // 长度减一
                 size--;
+                // 指针复位
                 i--;
             }
         }
