@@ -34,6 +34,7 @@ public class RemoveElement {
 
     /**
      * 快慢双指针
+     * 双指针法（快慢指针法）： 通过一个快指针和慢指针在一个for循环下完成两个for循环的工作。
      *
      * @param nums
      * @param val
