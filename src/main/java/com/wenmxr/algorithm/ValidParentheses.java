@@ -6,6 +6,7 @@ import java.util.LinkedList;
 
 /**
  * 20.有效的括号
+ * https://leetcode-cn.com/problems/valid-parentheses/
  *
  * @Author qinwen
  * @Date 2021/8/26 8:47 上午
