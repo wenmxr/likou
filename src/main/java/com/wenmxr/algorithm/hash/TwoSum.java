@@ -1,4 +1,4 @@
-package com.wenmxr.algorithm;
+package com.wenmxr.algorithm.hash;
 
 import java.util.Arrays;
 import java.util.HashMap;

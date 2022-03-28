@@ -1,4 +1,4 @@
-package com.wenmxr.algorithm;
+package com.wenmxr.algorithm.array;
 
 /**
  * 209.长度最小的子数组

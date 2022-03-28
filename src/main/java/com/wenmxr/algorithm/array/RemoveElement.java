@@ -1,4 +1,4 @@
-package com.wenmxr.algorithm;
+package com.wenmxr.algorithm.array;
 
 /**
  * 27.移除元素

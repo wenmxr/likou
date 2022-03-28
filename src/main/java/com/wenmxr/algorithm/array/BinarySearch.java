@@ -1,4 +1,4 @@
-package com.wenmxr.algorithm;
+package com.wenmxr.algorithm.array;
 
 /**
  * 704.二分查找
