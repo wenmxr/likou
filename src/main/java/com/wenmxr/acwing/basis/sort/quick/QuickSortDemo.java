@@ -1,4 +1,4 @@
-package com.wenmxr.acwing.basis;
+package com.wenmxr.acwing.basis.sort.quick;
 
 import java.io.BufferedInputStream;
 import java.util.Arrays;
