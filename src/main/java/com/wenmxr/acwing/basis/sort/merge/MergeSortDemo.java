@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
+ * 归并排序
+ *
  * @Author qinwen
  * @Date 2022/3/28 6:40 下午
  */
