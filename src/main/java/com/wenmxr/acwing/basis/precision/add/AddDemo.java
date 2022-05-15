@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
+ * 高精度加法
+ *
  * @Author qinwen
  * @Date 2022/4/13 10:43 上午
  */

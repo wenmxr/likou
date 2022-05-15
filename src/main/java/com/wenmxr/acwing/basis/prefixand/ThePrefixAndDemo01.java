@@ -4,10 +4,12 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 /**
+ * 前缀和
+ *
  * @Author qinwen
  * @Date 2022/4/28 6:15 下午
  */
-public class ThePrefixAnd {
+public class ThePrefixAndDemo01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(new BufferedInputStream(System.in));
         int n = scanner.nextInt();
