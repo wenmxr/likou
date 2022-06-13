@@ -22,7 +22,7 @@ public class SubSequence {
         }
 
         // 频率标记数组
-        int[] s = new int[n + 1];
+        int[] s = new int[100010];
         int ans = 0;
 
         // 维护一个区间
@@ -38,5 +38,18 @@ public class SubSequence {
         }
 
         System.out.println(ans);
+    }
+
+    public int lengthOfLongestSubstring(String s) {
+        int[] ss = new int[128];
+        int ans = 0;
+        for(int i = 0, j = 0; i < s.length(); i++) {
+            ss[s.charAt(i)]++;
+            while(j < i && ss[s.charAt(i)] > 1) {
+                ss[s.charAt(j++)]--;
+            }
+            ans = Math.max(ans, i - j + 1);
+        }
+        return ans;
     }
 }
